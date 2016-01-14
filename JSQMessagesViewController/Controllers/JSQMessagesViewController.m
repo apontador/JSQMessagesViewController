@@ -176,6 +176,11 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     [self jsq_updateCollectionViewInsets];
 }
 
+- (void)setBottomContentAdditionalInset:(CGFloat)bottomContentAdditionalInset{
+    _bottomContentAdditionalInset = _bottomContentAdditionalInset;
+    [self jsq_updateCollectionViewInsets];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
